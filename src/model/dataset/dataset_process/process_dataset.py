@@ -232,7 +232,7 @@ def assert_property(data):
     print("all annotation label's list: ", all_label)
 
 if __name__ == "__main__":
-    file_path = "./src/model/dataset/lll_dataset_v1"
+    file_path = "./src/model/dataset/lll_dataset_v1/labeled_data.json"
     save_SPAN_text_file(file_path)
 
     
