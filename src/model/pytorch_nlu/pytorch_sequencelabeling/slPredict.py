@@ -10,7 +10,8 @@ import sys
 import os
 path_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
 sys.path.append(path_root)
-from tcConfig import model_config
+from ..pytorch_textclassification.tcConfig import model_config
+# from tcConfig import model_config
 os.environ["CUDA_VISIBLE_DEVICES"] = model_config.get("CUDA_VISIBLE_DEVICES", "0")
 from slConfig import _SL_MODEL_SOFTMAX, _SL_MODEL_GRID, _SL_MODEL_SPAN, _SL_MODEL_CRF
 from slConfig import _SL_DATA_CONLL, _SL_DATA_SPAN
